@@ -12,6 +12,13 @@ public class DropdownUpdated {
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		driver.manage().window().maximize();
 		
+		// Handling Checkbox
+		System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+		driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
+		System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+		// Count the number of checkboxes on the page
+		System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
+		
 		driver.findElement(By.id("divpaxinfo")).click();
 		Thread.sleep(2000);
 		System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
