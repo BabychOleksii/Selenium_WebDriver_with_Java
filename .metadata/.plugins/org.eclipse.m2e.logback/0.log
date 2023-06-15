@@ -1038,3 +1038,8 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.epam.trai
 2023-06-15 10:58:43,220 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_with_Java\Introduction\src\main\resources
 2023-06-15 10:58:43,223 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-06-15 10:58:43,224 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_with_Java\Introduction\src\test\resources
+2023-06-15 11:00:34,256 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-15 11:01:32,365 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-15 11:01:32,379 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
+2023-06-15 11:01:32,383 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-15 11:01:32,396 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
