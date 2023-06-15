@@ -1147,3 +1147,15 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.epam.trai
 2023-06-15 16:33:45,119 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
 2023-06-15 16:33:45,121 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-06-15 16:33:45,122 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
+2023-06-15 16:37:40,939 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-15 16:37:40,944 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
+2023-06-15 16:37:40,946 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-15 16:37:40,948 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
+2023-06-15 16:49:02,300 [Worker-62: Launching DropdownAutosuggestive] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-15 16:49:02,301 [Worker-62: Launching DropdownAutosuggestive] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
+2023-06-15 16:49:02,303 [Worker-62: Launching DropdownAutosuggestive] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-15 16:49:02,305 [Worker-62: Launching DropdownAutosuggestive] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
+2023-06-15 16:49:43,167 [Worker-63: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-15 16:49:43,168 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
+2023-06-15 16:49:43,169 [Worker-63: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-15 16:49:43,170 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
