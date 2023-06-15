@@ -1,8 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 
 
 public class DropdownUpdated {
@@ -15,7 +13,7 @@ public class DropdownUpdated {
 		driver.manage().window().maximize();
 		
 		driver.findElement(By.id("divpaxinfo")).click();
-		Thread.sleep(2000L);
+		Thread.sleep(2000);
 		System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 		
 		for (int i=1; i<5; i++) {
