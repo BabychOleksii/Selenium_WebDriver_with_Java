@@ -45,6 +45,7 @@ public class ArrayOfProducts {
 				j++;
 				driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
 
+				// we add the j variable to interrupt the loop after we add 3 products to basket. For performance optimization.
 				if (j == product_names.length) {
 					break;
 				}
