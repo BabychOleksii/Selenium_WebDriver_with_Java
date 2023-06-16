@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 
 public class DropdownUpdated {
@@ -14,8 +15,11 @@ public class DropdownUpdated {
 		
 		// Handling Checkbox
 		System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+		Assert.assertFalse(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 		driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
 		System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+		Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+		
 		// Count the number of checkboxes on the page
 		System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 		
@@ -34,6 +38,7 @@ public class DropdownUpdated {
 //		}
 		
 		driver.findElement(By.id("btnclosepaxoption")).click();
+		Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
 		System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 	}
 
