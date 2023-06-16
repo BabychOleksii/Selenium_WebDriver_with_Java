@@ -1232,3 +1232,27 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.epam.trai
 2023-06-16 11:22:05,541 [Worker-93: Launching UIElements2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
 2023-06-16 11:22:05,543 [Worker-93: Launching UIElements2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-06-16 11:22:05,543 [Worker-93: Launching UIElements2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
+2023-06-16 12:08:25,214 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:08:25,218 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
+2023-06-16 12:08:25,220 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:08:25,221 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
+2023-06-16 12:12:50,016 [Worker-97: Launching Alerts] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:12:50,017 [Worker-97: Launching Alerts] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
+2023-06-16 12:12:50,018 [Worker-97: Launching Alerts] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:12:50,019 [Worker-97: Launching Alerts] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
+2023-06-16 12:13:09,672 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:13:09,673 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
+2023-06-16 12:13:09,674 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:13:09,675 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
+2023-06-16 12:13:43,740 [Worker-96: Launching Alerts] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:13:43,741 [Worker-96: Launching Alerts] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
+2023-06-16 12:13:43,743 [Worker-96: Launching Alerts] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:13:43,744 [Worker-96: Launching Alerts] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
+2023-06-16 12:16:52,184 [Worker-99: Launching Alerts] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:16:52,185 [Worker-99: Launching Alerts] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
+2023-06-16 12:16:52,187 [Worker-99: Launching Alerts] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:16:52,189 [Worker-99: Launching Alerts] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
+2023-06-16 12:17:43,010 [Worker-96: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:17:43,086 [Worker-96: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\main\resources
+2023-06-16 12:17:43,088 [Worker-96: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-16 12:17:43,104 [Worker-96: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\Introduction\src\test\resources
