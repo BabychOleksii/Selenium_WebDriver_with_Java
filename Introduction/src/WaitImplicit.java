@@ -1,3 +1,4 @@
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -6,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitImplicit {
 
@@ -13,7 +16,11 @@ public class WaitImplicit {
 		// TODO Auto-generated method stub
 
 		WebDriver driver = new ChromeDriver();
+
+		// declaring the Implicit wait
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		// declaring Explicit wait
+		WebDriverWait expl_wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
 		String[] product_names = { "Cucumber", "Banana", "Carrot" };
 
@@ -27,6 +34,9 @@ public class WaitImplicit {
 
 		driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
 		driver.findElement(By.cssSelector("button.promoBtn")).click();
+
+		// adding Explicit wait
+		expl_wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
 		System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
 
 	}
