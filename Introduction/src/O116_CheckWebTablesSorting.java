@@ -30,9 +30,17 @@ public class O116_CheckWebTablesSorting {
 
 		//
 		// scan the name column and get text
-		List<String> elem_price = elements_list.stream().filter(s -> s.getText().contains("Beans"))
-				.map(s -> getPriceVeggie(s)).collect(Collectors.toList());
-		elem_price.forEach(a->System.out.println(a));
+		List<String> elem_price;
+		do {
+			List<WebElement> table_rows = driver.findElements(By.xpath("//tr/td[1]"));
+			elem_price = table_rows.stream().filter(s -> s.getText().contains("Rice")).map(s -> getPriceVeggie(s))
+					.collect(Collectors.toList());
+			elem_price.forEach(a -> System.out.println(a));
+			if (elem_price.size() < 1) {
+				driver.findElement(By.cssSelector("[aria-label='Next']")).click();
+			}
+		} while (elem_price.size() < 1);
+
 	}
 
 	private static String getPriceVeggie(WebElement s) {
