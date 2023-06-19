@@ -28,8 +28,9 @@ public class O116_CheckWebTablesSorting {
 		// compare original list with the sorted list
 		Assert.assertTrue(original_list.equals(sorted_list));
 
-		//
-		// scan the name column and get text
+		// Find the product through multiple pages and get the price of the current
+		// product
+		// scan the name column and get text -> Rice -> get the price of the Rice
 		List<String> elem_price;
 		do {
 			List<WebElement> table_rows = driver.findElements(By.xpath("//tr/td[1]"));
