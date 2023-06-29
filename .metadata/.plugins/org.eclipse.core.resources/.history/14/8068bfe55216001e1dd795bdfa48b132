@@ -1,0 +1,25 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import static org.openqa.selenium.support.locators.RelativeLocator.*;
+
+import org.openqa.selenium.By;
+
+public class O122_RelativeLocators {
+
+	public static void main(String[] args) {
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://rahulshettyacademy.com/angularpractice/");
+		
+		// above() - element located above with the respect to the specified element
+		// below() - element located below with the respect to the specified element
+		// toLeftOf() - element located to the left to the specified element
+		// toRightOf() - element located to the right to the specified element
+		
+		WebElement name_input_box = driver.findElement(By.cssSelector("[name = 'name']"));
+		System.out.println(driver.findElement(with(By.tagName("label")).above(name_input_box)).getText());
+		
+	}
+}
