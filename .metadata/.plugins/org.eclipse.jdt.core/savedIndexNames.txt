@@ -28,7 +28,6 @@ INDEX VERSION 1.132+D:\Projects\Selenium_WebDriver_with_Java\.metadata\.plugins\
 1928246372.index
 1477665844.index
 1502684605.index
-178291131.index
 2254750755.index
 1043126307.index
 3127528706.index
