@@ -1,0 +1,42 @@
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class O125_MultipleWindowsTabs {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://rahulshettyacademy.com/angularpractice/");
+		
+		// open new browser tab
+		driver.switchTo().newWindow(WindowType.TAB);
+//		driver.switchTo().newWindow(WindowType.WINDOW); // will open the new browser window, but not the new tab
+		
+		// get both opened tabs into "handles"
+		Set<String> handles = driver.getWindowHandles();
+		// create the Iterator to identify both tabs
+		Iterator<String> my_iter = handles.iterator();
+		// Each of the opened tabs get its iterator number
+		String parent_window_id = my_iter.next();
+		String child_window_id = my_iter.next();
+		// switch the driver to the child tab
+		driver.switchTo().window(child_window_id);
+		// open the URL in the child tab
+		driver.get("https://rahulshettyacademy.com/");
+		// grab the name of the first course from the course list
+		String first_course_name = driver.findElements(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p/'")).get(1).getText();
+		// switch the driver back to the parent tab
+		driver.switchTo().window(parent_window_id);
+		// input the course name from the child tab into the input field of the parent tab
+		driver.findElement(By.cssSelector("[name='name']")).sendKeys(first_course_name);
+
+	}
+
+}
