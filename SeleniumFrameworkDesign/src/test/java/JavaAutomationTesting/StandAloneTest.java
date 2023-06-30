@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,13 +27,22 @@ public class StandAloneTest {
 		driver.findElement(By.id("userEmail")).sendKeys("babych.oleksii@gmail.com");
 		driver.findElement(By.id("userPassword")).sendKeys("babych.oleksii@gmail.comM1");
 		driver.findElement(By.id("login")).click();
-
+		
 		// find the item and add to cart
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
 		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
 		WebElement prod = products.stream()
 				.filter(product -> product.findElement(By.cssSelector("b")).getText().equals("ZARA COAT 3")).findFirst()
 				.orElse(null);
 		prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
+		
+		// check the message that the item was added to the cart
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
+		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
+		
+		// move to the cart page
+		driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
 		
 
 	}
