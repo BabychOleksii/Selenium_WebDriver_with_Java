@@ -2410,3 +2410,27 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.epam.trai
 2023-06-30 15:58:55,530 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\main\resources
 2023-06-30 15:58:55,532 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-06-30 15:58:55,532 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\test\resources
+2023-06-30 16:11:30,479 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:11:30,479 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\main\resources
+2023-06-30 16:11:30,481 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:11:30,481 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\test\resources
+2023-06-30 16:12:40,190 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:12:40,191 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\main\resources
+2023-06-30 16:12:40,193 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:12:40,193 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\test\resources
+2023-06-30 16:25:17,465 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:25:17,465 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\main\resources
+2023-06-30 16:25:17,467 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:25:17,467 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\test\resources
+2023-06-30 16:28:53,545 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:28:53,545 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\main\resources
+2023-06-30 16:28:53,546 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:28:53,546 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\test\resources
+2023-06-30 16:31:12,842 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:31:12,842 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\main\resources
+2023-06-30 16:31:12,845 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:31:12,845 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\test\resources
+2023-06-30 16:33:56,489 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:33:56,489 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\main\resources
+2023-06-30 16:33:56,491 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 16:33:56,491 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\test\resources

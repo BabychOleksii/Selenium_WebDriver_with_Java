@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import JavaAutomationTesting.pageobjects.LandingPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StandAloneTest {
@@ -27,6 +28,7 @@ public class StandAloneTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/client/");
+		LandingPage landingPage = new LandingPage(driver);
 
 		// login into account
 		driver.findElement(By.id("userEmail")).sendKeys("anyuser@gmail.com");
@@ -58,13 +60,14 @@ public class StandAloneTest {
 		// move to the checkout page
 		driver.findElement(By.cssSelector(".totalRow button")).click();
 
-		// fill the required fields on the checkout page (choose a country from dropdown)
+		// fill the required fields on the checkout page (choose a country from
+		// dropdown)
 		Actions act = new Actions(driver);
 		act.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")), "india").build().perform();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
 		driver.findElement(By.xpath("(//button[contains(@class, 'ta-item')])[2]")).click();
 		driver.findElement(By.cssSelector(".action__submit")).click();
-		
+
 		// Check the confirmation message on the "thank you" page
 		String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
