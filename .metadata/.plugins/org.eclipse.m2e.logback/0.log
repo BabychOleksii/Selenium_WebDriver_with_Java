@@ -2378,3 +2378,11 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.epam.trai
 2023-06-30 11:57:11,838 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\main\resources
 2023-06-30 11:57:11,840 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-06-30 11:57:11,840 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\test\resources
+2023-06-30 12:12:41,302 [Worker-43: Launching StandAloneTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 12:12:41,302 [Worker-43: Launching StandAloneTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\main\resources
+2023-06-30 12:12:41,304 [Worker-43: Launching StandAloneTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 12:12:41,304 [Worker-43: Launching StandAloneTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\test\resources
+2023-06-30 12:16:04,396 [Worker-42: Launching StandAloneTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 12:16:04,396 [Worker-42: Launching StandAloneTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\main\resources
+2023-06-30 12:16:04,398 [Worker-42: Launching StandAloneTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-30 12:16:04,398 [Worker-42: Launching StandAloneTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\Selenium_WebDriver_with_Java\SeleniumFrameworkDesign\src\test\resources
