@@ -1,5 +1,6 @@
 package JavaAutomationTesting;
 
+import java.nio.channels.InterruptedByTimeoutException;
 import java.time.Duration;
 import java.util.List;
 
@@ -18,7 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StandAloneTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
 		String productName = "ZARA COAT 3";
@@ -39,21 +40,23 @@ public class StandAloneTest {
 		landingPage.loginApplication("anyuser@gmail.com", "anyuser@gmail.comM1");
 
 		// find the item and add to cart
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
 //		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
 		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
 		List<WebElement> products = productCatalogue.getProductList();
 		
-		
-		WebElement prod = products.stream()
-				.filter(product -> product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst()
-				.orElse(null);
-		prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
+		// add the product to the cart
+//		WebElement prod = products.stream()
+//				.filter(product -> product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst()
+//				.orElse(null);
+//		prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
+		productCatalogue.addProductToCart(productName);
 
 		// check the message that the item was added to the cart
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
-		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
+//		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
+		
 
 		// move to the cart page
 		driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
