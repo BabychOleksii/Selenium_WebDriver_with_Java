@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import JavaAutomationTesting.pageobjects.LandingPage;
+import JavaAutomationTesting.pageobjects.ProductCatalogue;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StandAloneTest {
@@ -38,9 +39,13 @@ public class StandAloneTest {
 		landingPage.loginApplication("anyuser@gmail.com", "anyuser@gmail.comM1");
 
 		// find the item and add to cart
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
-		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
+//		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
+		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
+		List<WebElement> products = productCatalogue.getProductList();
+		
+		
 		WebElement prod = products.stream()
 				.filter(product -> product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst()
 				.orElse(null);

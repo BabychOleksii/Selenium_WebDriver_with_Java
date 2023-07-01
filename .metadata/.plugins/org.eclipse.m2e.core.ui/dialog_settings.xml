@@ -51,10 +51,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="JavaAutomationTesting"/>
 		</list>
 		<list key="groupId">
+			<item value="JavaAutomationTesting"/>
 		</list>
 		<list key="artifactId">
+			<item value="SeleniumFrameworkDesign"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
