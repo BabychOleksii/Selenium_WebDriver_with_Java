@@ -15,6 +15,7 @@ import org.testng.Assert;
 
 import JavaAutomationTesting.pageobjects.LandingPage;
 import JavaAutomationTesting.pageobjects.ProductCatalogue;
+import JavaAutomationTesting.pageobjects.CartPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StandAloneTest {
@@ -37,13 +38,12 @@ public class StandAloneTest {
 //		driver.findElement(By.id("userEmail")).sendKeys("anyuser@gmail.com");
 //		driver.findElement(By.id("userPassword")).sendKeys("anyuser@gmail.comM1");
 //		driver.findElement(By.id("login")).click();
-		landingPage.loginApplication("anyuser@gmail.com", "anyuser@gmail.comM1");
+		ProductCatalogue productCatalogue = landingPage.loginApplication("anyuser@gmail.com", "anyuser@gmail.comM1");
 
 		// find the item and add to cart
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
 //		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
-		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
 		List<WebElement> products = productCatalogue.getProductList();
 		
 		// add the product to the cart
@@ -57,18 +57,21 @@ public class StandAloneTest {
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
 //		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
 		
-
 		// move to the cart page
-		driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
+//		driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
+		CartPage cartPage = productCatalogue.goToCartPage();
 
 		// check the products in the cart page
-		List<WebElement> cartProducts = driver.findElements(By.cssSelector(".cartSection h3"));
-		Boolean match = cartProducts.stream()
-				.anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
+//		List<WebElement> cartProducts = driver.findElements(By.cssSelector(".cartSection h3"));
+//		Boolean match = cartProducts.stream()
+//				.anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
+		
+		Boolean match = cartPage.VerifyProductDisplay(productName);
 		Assert.assertTrue(match);
 
 		// move to the checkout page
-		driver.findElement(By.cssSelector(".totalRow button")).click();
+//		driver.findElement(By.cssSelector(".totalRow button")).click();
+		cartPage.goToCheckout();
 
 		// fill the required fields on the checkout page (choose a country from
 		// dropdown)
