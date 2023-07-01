@@ -27,13 +27,15 @@ public class StandAloneTest {
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
-		driver.get("https://rahulshettyacademy.com/client/");
-		LandingPage landingPage = new LandingPage(driver);
 
-		// login into account
-		driver.findElement(By.id("userEmail")).sendKeys("anyuser@gmail.com");
-		driver.findElement(By.id("userPassword")).sendKeys("anyuser@gmail.comM1");
-		driver.findElement(By.id("login")).click();
+		// visit the page and log into the account
+		LandingPage landingPage = new LandingPage(driver);
+//		driver.get("https://rahulshettyacademy.com/client/");
+		landingPage.goTo();
+//		driver.findElement(By.id("userEmail")).sendKeys("anyuser@gmail.com");
+//		driver.findElement(By.id("userPassword")).sendKeys("anyuser@gmail.comM1");
+//		driver.findElement(By.id("login")).click();
+		landingPage.loginApplication("anyuser@gmail.com", "anyuser@gmail.comM1");
 
 		// find the item and add to cart
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
