@@ -21,7 +21,7 @@ public class AbstractComponent {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy(css = "[routerlink*='cart']")
 	WebElement cartHeader;
 
@@ -30,7 +30,7 @@ public class AbstractComponent {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
 
 	}
-	
+
 	public CartPage goToCartPage() {
 //		driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
 		cartHeader.click();

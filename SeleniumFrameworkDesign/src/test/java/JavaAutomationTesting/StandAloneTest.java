@@ -16,6 +16,8 @@ import org.testng.Assert;
 import JavaAutomationTesting.pageobjects.LandingPage;
 import JavaAutomationTesting.pageobjects.ProductCatalogue;
 import JavaAutomationTesting.pageobjects.CartPage;
+import JavaAutomationTesting.pageobjects.CheckoutPage;
+import JavaAutomationTesting.pageobjects.ConfirmationPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StandAloneTest {
@@ -45,7 +47,7 @@ public class StandAloneTest {
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
 //		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
 		List<WebElement> products = productCatalogue.getProductList();
-		
+
 		// add the product to the cart
 //		WebElement prod = products.stream()
 //				.filter(product -> product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst()
@@ -56,7 +58,7 @@ public class StandAloneTest {
 		// check the message that the item was added to the cart
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
 //		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
-		
+
 		// move to the cart page
 //		driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
 		CartPage cartPage = productCatalogue.goToCartPage();
@@ -65,24 +67,27 @@ public class StandAloneTest {
 //		List<WebElement> cartProducts = driver.findElements(By.cssSelector(".cartSection h3"));
 //		Boolean match = cartProducts.stream()
 //				.anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
-		
+
 		Boolean match = cartPage.VerifyProductDisplay(productName);
 		Assert.assertTrue(match);
 
 		// move to the checkout page
 //		driver.findElement(By.cssSelector(".totalRow button")).click();
-		cartPage.goToCheckout();
+		CheckoutPage checkoutPage = cartPage.goToCheckout();
 
 		// fill the required fields on the checkout page (choose a country from
 		// dropdown)
-		Actions act = new Actions(driver);
-		act.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")), "india").build().perform();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
-		driver.findElement(By.xpath("(//button[contains(@class, 'ta-item')])[2]")).click();
-		driver.findElement(By.cssSelector(".action__submit")).click();
+//		Actions act = new Actions(driver);
+//		act.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")), "india").build().perform();
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
+//		driver.findElement(By.xpath("(//button[contains(@class, 'ta-item')])[2]")).click();
+//		driver.findElement(By.cssSelector(".action__submit")).click();
+		checkoutPage.selectCountry("india");
+		ConfirmationPage confirmationPage = checkoutPage.submitOrder();
 
 		// Check the confirmation message on the "thank you" page
-		String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();
+//		String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();
+		String confirmMessage = confirmationPage.getConfirmationMessage();
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 	}
 

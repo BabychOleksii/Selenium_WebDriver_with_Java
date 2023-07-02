@@ -1,16 +1,13 @@
 package JavaAutomationTesting.pageobjects;
 
-import java.time.Duration;
 import java.util.List;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-//import org.testng.Assert;
+
 
 import JavaAutomationTesting.AbstractComponents.AbstractComponent;
 
@@ -18,7 +15,7 @@ public class CartPage extends AbstractComponent {
 
 	WebDriver driver;
 
-	@FindBy(css = ".toalRow button")
+	@FindBy(css = ".totalRow button")
 	WebElement checkoutElem;
 
 	@FindBy(css = ".cartSection h3")
@@ -40,8 +37,9 @@ public class CartPage extends AbstractComponent {
 		return match;
 	}
 
-	public void goToCheckout() {
+	public CheckoutPage goToCheckout() {
 		checkoutElem.click();
+		return new CheckoutPage(driver);
 	}
 
 }
